@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: spring-boot3-keycloak-admin-client
+
+keycloak:
+  realm: bootlab
+  endpoint: http://localhost:8080
+  application:
+    client-id: my-app-client
+    client-secret: ${secret}
+
+
+# swagger-ui custom path
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
